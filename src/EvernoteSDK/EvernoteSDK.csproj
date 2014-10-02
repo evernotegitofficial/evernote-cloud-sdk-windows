@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFB2706A-EE60-4B33-ABD4-695B509F277B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EvernoteSDK</RootNamespace>
+    <AssemblyName>EvernoteSDK</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>EvernoteSDK.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>EvernoteSDK.xml</DocumentationFile>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsQuery">
+      <HintPath>..\..\assemblies\CsQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomMarshalers" />
+    <Reference Include="en-html2enml, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Private\Supporting Files\en-html2enml.dll</HintPath>
+    </Reference>
+    <Reference Include="Evernote, Version=1.0.5361.12355, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Support Assemblies\Evernote.dll</HintPath>
+    </Reference>
+    <Reference Include="EvernoteOAuthNet">
+      <HintPath>..\..\assemblies\EvernoteOAuthNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PreMailer.Net, Version=1.2.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Support Assemblies\PreMailer.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="SgmlReaderDll, Version=1.8.11.0, Culture=neutral, PublicKeyToken=46b2db9ca481831b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Support Assemblies\SgmlReaderDll.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Thrift, Version=0.8.0.12355, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Support Assemblies\Thrift.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advanced\EdamNote.cs" />
+    <Compile Include="Advanced\EdamTag.cs" />
+    <Compile Include="Advanced\ENNoteStoreClient.cs" />
+    <Compile Include="Advanced\ENPreferencesStore.cs" />
+    <Compile Include="Advanced\ENSDKAdvanced.cs" />
+    <Compile Include="Advanced\Utilities\CipherUtility.cs" />
+    <Compile Include="Advanced\Utilities\ENMLWriter\ENMLWriterCOM.cs" />
+    <Compile Include="Advanced\Utilities\ENRegistry.cs" />
+    <Compile Include="Advanced\ENUserStoreClient.cs" />
+    <Compile Include="Advanced\Utilities\ByteArray_EvernoteSDK.cs" />
+    <Compile Include="Advanced\Utilities\ENMLConstants.cs" />
+    <Compile Include="Advanced\Utilities\ENMLWriter\ENEncryptedContentInfo.cs" />
+    <Compile Include="Advanced\Utilities\ENMLWriter\ENMLWriter.cs" />
+    <Compile Include="Advanced\Utilities\ENMLWriter\String_EDAMNullAdditions.cs" />
+    <Compile Include="Advanced\Utilities\TimeConversions_EvernoteSDK.cs" />
+    <Compile Include="ENNoteContentForCOM.cs" />
+    <Compile Include="ENNoteSearchForCOM.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Private\ENCollection.cs" />
+    <Compile Include="ENSessionForCOM.cs" />
+    <Compile Include="ENConstants.cs" />
+    <Compile Include="ENError.cs" />
+    <Compile Include="ENNote.cs" />
+    <Compile Include="ENNotebook.cs" />
+    <Compile Include="ENNoteContent.cs" />
+    <Compile Include="ENNoteRef.cs" />
+    <Compile Include="ENNoteSearch.cs" />
+    <Compile Include="ENResource.cs" />
+    <Compile Include="ENSDKLogger.cs" />
+    <Compile Include="ENSession.cs" />
+    <Compile Include="Private\ENMLtoHTMLConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Application.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Private\ENAuthCache.cs" />
+    <Compile Include="Private\ENLinkedNotebookRef.cs" />
+    <Compile Include="Private\ENLinkedNoteStoreClient.cs" />
+    <Compile Include="Private\ENBusinessNoteStoreClient.cs" />
+    <Compile Include="Private\ENCredentials.cs" />
+    <Compile Include="Private\ENCredentialStore.cs" />
+    <Compile Include="Private\ENHTMLNoteContent.cs" />
+    <Compile Include="Private\ENHTMLtoENMLConverter.cs" />
+    <Compile Include="Private\ENPlaintextNoteContent.cs" />
+    <Compile Include="Private\ENShareUrlHelper.cs" />
+    <Compile Include="Private\String_ENScrubbing.cs" />
+    <Compile Include="Private\ValidationError.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Private\Supporting Files\enml2full.dtd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
