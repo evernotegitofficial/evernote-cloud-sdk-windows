@@ -1,7 +1,7 @@
 Getting Started with the Evernote Cloud SDK for Windows
 ---
 
-This document covers getting set up with the Cloud SDK, some quick examples, and some discussion of the primary classes. 
+This document covers getting set up with the Cloud SDK for Windows, some quick examples, and some discussion of the primary classes. 
 
 ### Hello World!
 
