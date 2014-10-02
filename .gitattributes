@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
@@ -62,7 +61,7 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
-=======
+
 # Auto detect text files and perform LF normalization
 * text=auto
 
@@ -85,4 +84,3 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
->>>>>>> :circus_tent: Added .gitattributes & .gitignore files
