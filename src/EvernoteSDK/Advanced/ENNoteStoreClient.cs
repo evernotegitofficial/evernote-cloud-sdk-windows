@@ -711,7 +711,7 @@ namespace EvernoteSDK
 
 			///** Expunges the SharedNotebooks in the user's account using the SharedNotebook.id as the identifier.
 			// NOTE: This function is not available to third party applications. Calls will result in an EDAMUserException with the error code PERMISSION_DENIED.
-			// @param sharedNotebookIds a list of ShardNotebook.id longs identifying the objects to delete permanently.
+			// @param sharedNotebookIds a list of SharedNotebook.id longs identifying the objects to delete permanently.
 			// */
 			public int ExpungeSharedNotebooks(List<long> sharedNotebookIds)
 			{
@@ -864,6 +864,13 @@ namespace EvernoteSDK
 						return results;
 					}
 				}
+                catch (Evernote.EDAM.Error.EDAMNotFoundException)
+                {
+                    // Failed to get the sharedNotebook from the service.
+                    // The shared notebook could be deleted from the owner.
+                    ENSDKLogger.ENSDKLogError("EDAMNotFound error in FindNotesMetadata - shared notebook not found");
+                    return null;
+                }
 				catch (Exception ex)
 				{
 					throw new Exception(ex.Message, ex.InnerException);

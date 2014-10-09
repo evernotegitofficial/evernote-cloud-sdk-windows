@@ -82,31 +82,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2E991D8DBB6B22EDF9E456F7DE3EFD4E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3C519F04AEC41186FEF47D7986923BD6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A9CFE70A3E82E64F79041CE31E88DC51"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6FCAE2BC304EED257ADE5A532B21702F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_31E0039E5CE3ADA799E0DFFA96E13D85"
+        "OwnerKey" = "8:_C1843DE62F525E74ADE421C699F5CFF5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -118,7 +94,31 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C1843DE62F525E74ADE421C699F5CFF5"
+        "OwnerKey" = "8:_31E0039E5CE3ADA799E0DFFA96E13D85"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_6FCAE2BC304EED257ADE5A532B21702F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A9CFE70A3E82E64F79041CE31E88DC51"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3C519F04AEC41186FEF47D7986923BD6"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2E991D8DBB6B22EDF9E456F7DE3EFD4E"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -233,11 +233,6 @@
             "AssemblyAsmDisplayName" = "8:EvernoteOAuthNet, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_043C6FE652AFCA69D2DF4CDAC1A08105"
-                    {
-                    "Name" = "8:EvernoteOAuthNet.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:EvernoteOAuthNet.dll"
             "TargetName" = "8:"
@@ -264,11 +259,6 @@
             "AssemblyAsmDisplayName" = "8:SgmlReaderDll, Version=1.8.11.0, Culture=neutral, PublicKeyToken=46b2db9ca481831b, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_2E991D8DBB6B22EDF9E456F7DE3EFD4E"
-                    {
-                    "Name" = "8:SgmlReaderDll.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:SgmlReaderDll.dll"
             "TargetName" = "8:"
@@ -295,11 +285,6 @@
             "AssemblyAsmDisplayName" = "8:en-html2enml, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_31E0039E5CE3ADA799E0DFFA96E13D85"
-                    {
-                    "Name" = "8:en-html2enml.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:en-html2enml.dll"
             "TargetName" = "8:"
@@ -326,11 +311,6 @@
             "AssemblyAsmDisplayName" = "8:PreMailer.Net, Version=1.2.7.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_3C519F04AEC41186FEF47D7986923BD6"
-                    {
-                    "Name" = "8:PreMailer.Net.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:PreMailer.Net.dll"
             "TargetName" = "8:"
@@ -357,11 +337,6 @@
             "AssemblyAsmDisplayName" = "8:Thrift, Version=0.8.0.16918, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_6FCAE2BC304EED257ADE5A532B21702F"
-                    {
-                    "Name" = "8:Thrift.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Thrift.dll"
             "TargetName" = "8:"
@@ -388,11 +363,6 @@
             "AssemblyAsmDisplayName" = "8:Evernote, Version=1.0.5377.16918, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_A9CFE70A3E82E64F79041CE31E88DC51"
-                    {
-                    "Name" = "8:Evernote.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Evernote.dll"
             "TargetName" = "8:"
@@ -419,11 +389,6 @@
             "AssemblyAsmDisplayName" = "8:CsQuery, Version=1.3.3.249, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_C1843DE62F525E74ADE421C699F5CFF5"
-                    {
-                    "Name" = "8:CsQuery.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:CsQuery.dll"
             "TargetName" = "8:"
@@ -499,15 +464,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:EvernoteSDK COM Setup"
-        "ProductCode" = "8:{BAABFF1F-2AFF-4FF2-9CB8-9309FA84F49E}"
-        "PackageCode" = "8:{C82F60A8-3FAD-4B1A-BBC7-68911DB505B2}"
+        "ProductCode" = "8:{3B65DE72-51C0-4722-B33C-D62BBC04E95D}"
+        "PackageCode" = "8:{0420EA24-1418-41D0-BD1E-95E4F2CB42DC}"
         "UpgradeCode" = "8:{51A555BB-0DB6-49EF-A255-CF67AAA048D0}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.3"
+        "ProductVersion" = "8:1.0.4"
         "Manufacturer" = "8:Evernote"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

@@ -201,6 +201,13 @@ namespace EvernoteSDK
                 }
                 return content;
             }
+
+            public string EvernoteNoteLink(ENNoteRef noteRef)
+            {
+                    string shardId = ShardIdForNoteRef(noteRef);
+                    return String.Format("evernote:///view/{0}/{1}/{2}/{2}/", UserID, shardId, noteRef.Guid);
+            }
+
 		}
 
 		public class ENSessionAdvancedForCOM
@@ -386,7 +393,7 @@ namespace EvernoteSDK
 					return base.Guid;
 				}
 			}
-		}
+        }
 	}
 
 }

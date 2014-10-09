@@ -207,10 +207,10 @@ namespace EvernoteSDK
 			}
 		}
 
-		private string SessionHost {get; set;}
+		protected string SessionHost {get; set;}
 		private User EdamUser {get; set;}
 		private string PrimaryAuthenticationToken {get; set;}
-		private string BusinessShardId {get; set;}
+		//private string BusinessShardId {get; set;}
 		private List<ENNotebook> NotebooksCache {get; set;}
 		private DateTime NotebooksCacheDate {get; set;}
 		private bool AuthenticationCompleted {get; set;}
@@ -746,17 +746,23 @@ namespace EvernoteSDK
 			List<LinkedNotebook> linkedPersonalNotebooksCopy = new List<LinkedNotebook>(context.LinkedPersonalNotebooks);
 			foreach (LinkedNotebook linkedNotebook in linkedPersonalNotebooksCopy)
 			{
-				SharedNotebook sharedNotebook = null;
-				context.SharedBusinessNotebooks.TryGetValue(linkedNotebook.ShareKey, out sharedNotebook);
-				if (sharedNotebook != null)
-				{
-					// This linked notebook corresponds to a business notebook.
-					Notebook businessNotebook = context.BusinessNotebooks[sharedNotebook.NotebookGuid];
-					ENNotebook result = new ENNotebook(businessNotebook, sharedNotebook, linkedNotebook);
-
-					context.ResultNotebooks.Add(result);
-					context.LinkedPersonalNotebooks.Remove(linkedNotebook);
-				}
+                SharedNotebook sharedNotebook = null;
+                if (linkedNotebook.ShareKey != null)
+                {
+                    context.SharedBusinessNotebooks.TryGetValue(linkedNotebook.ShareKey, out sharedNotebook);
+                    if (sharedNotebook != null)
+                    {
+                        // This linked notebook corresponds to a business notebook.
+                        Notebook businessNotebook = null;
+                        context.BusinessNotebooks.TryGetValue(sharedNotebook.NotebookGuid, out businessNotebook);
+                        if (businessNotebook != null)
+                        {
+                            ENNotebook result = new ENNotebook(businessNotebook, sharedNotebook, linkedNotebook);
+                            context.ResultNotebooks.Add(result);
+                        }
+                        context.LinkedPersonalNotebooks.Remove(linkedNotebook);
+                    }
+                }
 			}
 
 			// Any remaining linked notebooks are personal shared notebooks. No shared notebooks?
@@ -782,7 +788,9 @@ namespace EvernoteSDK
 			Dictionary<string, object> sharedNotebooks = new Dictionary<string, object>();
 			context.SharedNotebooks = sharedNotebooks;
 
-			foreach (var linkedNotebook in context.LinkedPersonalNotebooks)
+
+            List<LinkedNotebook> linkedPersonalNotebooksCopy = new List<LinkedNotebook>(context.LinkedPersonalNotebooks);
+            foreach (LinkedNotebook linkedNotebook in linkedPersonalNotebooksCopy)
 			{
 				ENNoteStoreClient noteStore = NoteStoreForLinkedNotebook(linkedNotebook);
 				if (linkedNotebook.ShareKey == null)
@@ -812,11 +820,24 @@ namespace EvernoteSDK
 				else
 				{
 					try
-					{
-						SharedNotebook sharedNotebook = noteStore.GetSharedNotebookByAuth();
-						// Add the shared notebook to the map.
-						sharedNotebooks.Add(linkedNotebook.Guid, sharedNotebook);
-						context = ListNotebooks_CompletePendingSharedNotebook(context);
+                    {
+                        SharedNotebook sharedNotebook = null;
+                        try
+                        {
+                            sharedNotebook = noteStore.GetSharedNotebookByAuth();
+                            // Add the shared notebook to the map.
+                            sharedNotebooks.Add(linkedNotebook.Guid, sharedNotebook);
+                            context = ListNotebooks_CompletePendingSharedNotebook(context);
+                        }
+                        catch (Exception)
+                        {
+                            // Failed to get the sharedNotebook from the service.
+                            // The shared notebook could be deleted from the owner.
+                            // We remove the linked notebook record from the context so it won't be listed in the result.
+                            ENSDKLogger.ENSDKLogError(string.Format("Failed to get shared notebook for linked notebook record {0}", linkedNotebook));
+                            context.LinkedPersonalNotebooks.Remove(linkedNotebook);
+                            context = ListNotebooks_CompletePendingSharedNotebook(context);
+                        }
 					}
 					catch (Exception ex)
 					{
@@ -1489,7 +1510,7 @@ namespace EvernoteSDK
 			{
 				foreach (ENNotebook notebook in context.allNotebooks)
 				{
-					if (notebook.IsLinked && !notebook.IsBusinessNotebook)
+                    if (notebook.IsLinked && !notebook.IsBusinessNotebook)
 					{
 						context.linkedNotebooksToSearch.Add(notebook);
 					}
@@ -1523,12 +1544,12 @@ namespace EvernoteSDK
 			try
 			{
 				List<NoteMetadata> notesMetadataList = noteStore.FindNotesMetadata(context.noteFilter, context.maxResults, context.resultSpec);
-				context.findMetadataResults.AddRange(notesMetadataList);
+                if (notesMetadataList != null)
+                {
+                    context.findMetadataResults.AddRange(notesMetadataList);
+                }
 				// Do it again with the next linked notebook in the list.
 				context = FindNotes_NextFindInLinkedScope(context);
-			}
-			catch (Evernote.EDAM.Error.EDAMUserException)
-			{
 			}
 			catch (Exception ex)
 			{
@@ -1891,6 +1912,22 @@ namespace EvernoteSDK
             }
         }
 
+        private string _businessShardId;
+        private string BusinessShardId
+        {
+            get
+            {
+                if (_businessShardId == null)
+                {
+                    string storeUrl = BusinessNoteStore.NoteStoreUrl();
+                    int startPos = storeUrl.IndexOf("shard/s");
+                    int endPos = storeUrl.IndexOf("/", startPos + 6);
+                    _businessShardId = storeUrl.Substring(startPos + 6, endPos - startPos - 6);
+                }
+                return _businessShardId;
+            }
+        }
+
         internal ENNoteStoreClient NoteStoreForLinkedNotebook(LinkedNotebook linkedNotebook)
         {
             ENLinkedNotebookRef linkedNotebookRef = ENLinkedNotebookRef.LinkedNotebookRefFromLinkedNotebook(linkedNotebook);
@@ -2053,6 +2090,11 @@ namespace EvernoteSDK
 
 		internal string AuthenticationTokenForLinkedNotebookRef(ENLinkedNotebookRef linkedNotebookRef)
 		{
+            // Use null token for joined public notebook.
+	        if (linkedNotebookRef.SharedNotebookGlobalId == null) {
+	            return null;
+	        } 
+
 			// See if we have auth data already for this notebook.
 			AuthenticationResult auth = AuthCache.AuthenticationResultForLinkedNotebook(linkedNotebookRef.Guid);
 			if (auth == null)
