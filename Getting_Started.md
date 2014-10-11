@@ -29,7 +29,7 @@ You can also just test-drive the SDK against your personal production Evernote a
 
 You have a few options:
 
-- (Recommended) *Use Nuget.* From within Visual Studio, using the Nuget Package Manager, find and install "Evernote SDK for Windows" -- this will install the Evernote SDK and its required dependent assemblies into your C# or VB.NET project.
+- (Recommended) *Use Nuget.* From within Visual Studio, using the Nuget Package Manager, find and install "Evernote Cloud SDK for Windows" -- this will install the Evernote SDK and its required dependent assemblies into your C# or VB.NET project.
 
 - (Alternative 1) From within Visual Studio, you can use the Add References option to add the DLL files contained in the "assemblies" folder of this repository into your C# or VB.NET project.
 
