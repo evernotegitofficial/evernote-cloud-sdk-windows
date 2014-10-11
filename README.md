@@ -1,4 +1,4 @@
-Evernote Cloud SDK 2.0 for Windows
+Evernote Cloud SDK for Windows
 ==================================
 
 What Is This?
