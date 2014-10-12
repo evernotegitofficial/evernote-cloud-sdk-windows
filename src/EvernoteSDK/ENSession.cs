@@ -302,7 +302,7 @@ namespace EvernoteSDK
 		//*   token The developer token
 		//*   url   The Note Store URL.
 		//*/
-		public static void SetSharedSessionDeveloper(string sessionDeveloperToken, string sessionNoteStoreUrl)
+		public static void SetSharedSessionDeveloperToken(string sessionDeveloperToken, string sessionNoteStoreUrl)
 		{
 			DeveloperToken = sessionDeveloperToken;
 			NoteStoreUrl = sessionNoteStoreUrl;
@@ -415,7 +415,7 @@ namespace EvernoteSDK
 			{
 				// Choose the initial host based on locale. Simplified Chinese locales get the yinxiang service.
 				string locale = CultureInfo.CurrentCulture.ToString().ToLower();
-				if (locale.StartsWith("zh_hans") || locale == "zh_cn" || locale == "zh")
+                if (locale.StartsWith("zh_hans") || locale == "zh_cn" || locale == "zh")
 				{
 					SessionHost = ENSessionBootstrapServerBaseURLStringCN;
 				}

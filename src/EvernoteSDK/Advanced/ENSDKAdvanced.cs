@@ -35,10 +35,10 @@ namespace EvernoteSDK
 				ENSession.SetSharedSessionConsumerKey(sessionConsumerKey, sessionConsumerSecret, sessionHost);
 			}
 
-			new public static void SetSharedSessionDeveloper(string sessionDeveloperToken, string sessionNoteStoreUrl)
+			new public static void SetSharedSessionDeveloperToken(string sessionDeveloperToken, string sessionNoteStoreUrl)
 			{
 				ENSession.ENSessionInterfaceType = InterfaceType.Advanced;
-				ENSession.SetSharedSessionDeveloper(sessionDeveloperToken, sessionNoteStoreUrl);
+				ENSession.SetSharedSessionDeveloperToken(sessionDeveloperToken, sessionNoteStoreUrl);
 			}
 
 			//// Indicates if your app is capable of supporting linked/business notebooks as app notebook destinations.
@@ -217,9 +217,9 @@ namespace EvernoteSDK
 				ENSessionAdvanced.SetSharedSessionConsumerKey(sessionConsumerKey, sessionConsumerSecret, sessionHost);
 			}
 
-			public void SetSharedSessionDeveloper(string sessionDeveloperToken, string sessionNoteStoreUrl)
+			public void SetSharedSessionDeveloperToken(string sessionDeveloperToken, string sessionNoteStoreUrl)
 			{
-				ENSessionAdvanced.SetSharedSessionDeveloper(sessionDeveloperToken, sessionNoteStoreUrl);
+				ENSessionAdvanced.SetSharedSessionDeveloperToken(sessionDeveloperToken, sessionNoteStoreUrl);
 			}
 
 			public ENSession SharedSession()

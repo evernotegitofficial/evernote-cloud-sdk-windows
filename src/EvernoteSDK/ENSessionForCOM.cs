@@ -9,9 +9,9 @@ namespace EvernoteSDK
 			ENSession.SetSharedSessionConsumerKey(sessionConsumerKey, sessionConsumerSecret, sessionHost);
 		}
 
-        public void SetSharedSessionDeveloper(string sessionDeveloperToken, string sessionNoteStoreUrl)
+        public void SetSharedSessionDeveloperToken(string sessionDeveloperToken, string sessionNoteStoreUrl)
         {
-            ENSession.SetSharedSessionDeveloper(sessionDeveloperToken, sessionNoteStoreUrl);
+            ENSession.SetSharedSessionDeveloperToken(sessionDeveloperToken, sessionNoteStoreUrl);
         }
 
         public ENSession SharedSession()

@@ -82,31 +82,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C1843DE62F525E74ADE421C699F5CFF5"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_043C6FE652AFCA69D2DF4CDAC1A08105"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_31E0039E5CE3ADA799E0DFFA96E13D85"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6FCAE2BC304EED257ADE5A532B21702F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A9CFE70A3E82E64F79041CE31E88DC51"
+        "OwnerKey" = "8:_2E991D8DBB6B22EDF9E456F7DE3EFD4E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -118,7 +94,31 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2E991D8DBB6B22EDF9E456F7DE3EFD4E"
+        "OwnerKey" = "8:_A9CFE70A3E82E64F79041CE31E88DC51"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_6FCAE2BC304EED257ADE5A532B21702F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_31E0039E5CE3ADA799E0DFFA96E13D85"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_043C6FE652AFCA69D2DF4CDAC1A08105"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C1843DE62F525E74ADE421C699F5CFF5"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -464,15 +464,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:EvernoteSDK COM Setup"
-        "ProductCode" = "8:{3B65DE72-51C0-4722-B33C-D62BBC04E95D}"
-        "PackageCode" = "8:{0420EA24-1418-41D0-BD1E-95E4F2CB42DC}"
+        "ProductCode" = "8:{0D96D0B2-66E8-4AE3-B35C-20F322A4F3EE}"
+        "PackageCode" = "8:{E089FF8D-27DA-4E1D-992E-284B8BAD8F70}"
         "UpgradeCode" = "8:{51A555BB-0DB6-49EF-A255-CF67AAA048D0}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.4"
+        "ProductVersion" = "8:1.0.5"
         "Manufacturer" = "8:Evernote"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

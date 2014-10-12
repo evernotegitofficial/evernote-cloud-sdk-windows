@@ -229,7 +229,7 @@
         <member name="M:EvernoteSDK.ENSession.SetSharedSessionConsumerKey(System.String,System.String,System.String)">
             **
         </member>
-        <member name="M:EvernoteSDK.ENSession.SetSharedSessionDeveloper(System.String,System.String)">
+        <member name="M:EvernoteSDK.ENSession.SetSharedSessionDeveloperToken(System.String,System.String)">
             **
         </member>
         <member name="F:EvernoteSDK.ENSession._sharedSession">
