@@ -1698,8 +1698,12 @@ namespace EvernoteSDK
 			{
 				Note note = noteStore.GetNote(noteRef.Guid, true, true, false, false);
 				// Create an ENNote from the EDAMNote.
-				ENNote resultNote = new ENNote(note);
-				return resultNote;
+                if (ENSessionInterfaceType == InterfaceType.Advanced)
+                {
+                    return new ENNoteAdvanced(note);
+                } else {
+                    return new ENNote(note);
+                }
 			}
 			catch (Exception)
 			{

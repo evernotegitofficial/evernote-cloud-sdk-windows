@@ -248,6 +248,14 @@ namespace EvernoteSDK
 
 		public class ENNoteAdvanced : ENNote
 		{
+            public ENNoteAdvanced()
+            {
+            }
+
+            public ENNoteAdvanced(Note edamNote) : base(edamNote)
+            {
+            }
+
 			///**
 			//*  A property indicating the "source" URL for this note. Optional, and useful mainly in contexts where the 
 			//*  note is captured from web content.
