@@ -546,7 +546,10 @@ namespace EvernoteSDK
 			PrimaryNoteStore = null;
 			BusinessNoteStore = null;
 			AuthCache = new ENAuthCache();
-			NotebooksCache.Clear();
+            if (NotebooksCache != null)
+            {
+                NotebooksCache.Clear();
+            }
 			NotebooksCacheDate = new DateTime();
 
 			// Manually clear credentials. This ensures they're removed from the registry also.
@@ -1356,7 +1359,11 @@ namespace EvernoteSDK
 
 		public ENCollection FindNotesForCOM(ENNoteSearch noteSearch,  ENNotebook notebook, SearchScope scope, SortOrder order, int maxResults)
 		{
+            System.Windows.Forms.MessageBox.Show("Finding...", "Debug", System.Windows.Forms.MessageBoxButtons.OK);
+            
             List<ENSessionFindNotesResult> results = ENSession.SharedSession.FindNotes(noteSearch, notebook, scope, order, maxResults);
+
+            System.Windows.Forms.MessageBox.Show(results.Count.ToString(),"Debug",System.Windows.Forms.MessageBoxButtons.OK);
 
 			ENCollection comResults = new ENCollection();
             foreach (ENSessionFindNotesResult result in results)

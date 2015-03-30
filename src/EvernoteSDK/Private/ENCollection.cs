@@ -7,7 +7,8 @@ using System.Runtime.InteropServices.CustomMarshalers;
 
 namespace EvernoteSDK
 {
-    [ClassInterface(ClassInterfaceType.AutoDual)]
+    //[ClassInterface(ClassInterfaceType.AutoDual)]
+    [ClassInterface(ClassInterfaceType.None)]
     public class ENCollection : _Collection
     {
         private Microsoft.VisualBasic.Collection m_Collection = new Microsoft.VisualBasic.Collection();
@@ -130,6 +131,7 @@ namespace EvernoteSDK
     }
 
     [ComImport(), TypeLibType(TypeLibTypeFlags.FDual | TypeLibTypeFlags.FDispatchable | TypeLibTypeFlags.FHidden), Guid("A4C46780-499F-101B-BB78-00AA00383CBB"), DefaultMember("Item")]
+    //[ComImport(), TypeLibType(TypeLibTypeFlags.FDispatchable | TypeLibTypeFlags.FHidden), Guid("A4C46780-499F-101B-BB78-00AA00383CBB"), DefaultMember("Item")]
     public interface _Collection : IEnumerable
     {
         [return: MarshalAs(UnmanagedType.Struct)]

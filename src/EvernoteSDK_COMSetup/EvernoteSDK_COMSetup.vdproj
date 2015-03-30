@@ -15,110 +15,116 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_043C6FE652AFCA69D2DF4CDAC1A08105"
-        "OwnerKey" = "8:_5FB63DAE7F9A4C94A05C640417644DA1"
+        "MsmKey" = "8:_12AD9A3AF6E60287C440D569B9965A6D"
+        "OwnerKey" = "8:_F96CF8210B8A48278E48335827107C1A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_2E991D8DBB6B22EDF9E456F7DE3EFD4E"
-        "OwnerKey" = "8:_5FB63DAE7F9A4C94A05C640417644DA1"
+        "MsmKey" = "8:_1F8E3AA9A8D3EA6D1C2AEE2C1C06979E"
+        "OwnerKey" = "8:_F96CF8210B8A48278E48335827107C1A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_31E0039E5CE3ADA799E0DFFA96E13D85"
-        "OwnerKey" = "8:_5FB63DAE7F9A4C94A05C640417644DA1"
+        "MsmKey" = "8:_5F8C4B9624BA59FCE1A7546BED3C4178"
+        "OwnerKey" = "8:_A9BA4D4A1AE8FEFF72FA17016AFFEA6F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_3C519F04AEC41186FEF47D7986923BD6"
-        "OwnerKey" = "8:_5FB63DAE7F9A4C94A05C640417644DA1"
+        "MsmKey" = "8:_5F8C4B9624BA59FCE1A7546BED3C4178"
+        "OwnerKey" = "8:_F96CF8210B8A48278E48335827107C1A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_5FB63DAE7F9A4C94A05C640417644DA1"
+        "MsmKey" = "8:_785D19194EA50DC0ABBE7568642C5DD3"
+        "OwnerKey" = "8:_F96CF8210B8A48278E48335827107C1A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8CB9589B5134CA7B68C8A3FC2AC67113"
+        "OwnerKey" = "8:_F96CF8210B8A48278E48335827107C1A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8CB9589B5134CA7B68C8A3FC2AC67113"
+        "OwnerKey" = "8:_1F8E3AA9A8D3EA6D1C2AEE2C1C06979E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9DEF72AAB525AE67F91E64AB504E25C8"
+        "OwnerKey" = "8:_F96CF8210B8A48278E48335827107C1A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A9BA4D4A1AE8FEFF72FA17016AFFEA6F"
+        "OwnerKey" = "8:_F96CF8210B8A48278E48335827107C1A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E03C302115B092E539F97C3A3CDD7BFB"
+        "OwnerKey" = "8:_F96CF8210B8A48278E48335827107C1A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F96CF8210B8A48278E48335827107C1A"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_6FCAE2BC304EED257ADE5A532B21702F"
-        "OwnerKey" = "8:_A9CFE70A3E82E64F79041CE31E88DC51"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_6FCAE2BC304EED257ADE5A532B21702F"
-        "OwnerKey" = "8:_5FB63DAE7F9A4C94A05C640417644DA1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_A9CFE70A3E82E64F79041CE31E88DC51"
-        "OwnerKey" = "8:_5FB63DAE7F9A4C94A05C640417644DA1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_C1843DE62F525E74ADE421C699F5CFF5"
-        "OwnerKey" = "8:_5FB63DAE7F9A4C94A05C640417644DA1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_C1843DE62F525E74ADE421C699F5CFF5"
-        "OwnerKey" = "8:_3C519F04AEC41186FEF47D7986923BD6"
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_8CB9589B5134CA7B68C8A3FC2AC67113"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5FB63DAE7F9A4C94A05C640417644DA1"
+        "OwnerKey" = "8:_12AD9A3AF6E60287C440D569B9965A6D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2E991D8DBB6B22EDF9E456F7DE3EFD4E"
+        "OwnerKey" = "8:_9DEF72AAB525AE67F91E64AB504E25C8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3C519F04AEC41186FEF47D7986923BD6"
+        "OwnerKey" = "8:_5F8C4B9624BA59FCE1A7546BED3C4178"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A9CFE70A3E82E64F79041CE31E88DC51"
+        "OwnerKey" = "8:_A9BA4D4A1AE8FEFF72FA17016AFFEA6F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6FCAE2BC304EED257ADE5A532B21702F"
+        "OwnerKey" = "8:_1F8E3AA9A8D3EA6D1C2AEE2C1C06979E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_31E0039E5CE3ADA799E0DFFA96E13D85"
+        "OwnerKey" = "8:_E03C302115B092E539F97C3A3CDD7BFB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_043C6FE652AFCA69D2DF4CDAC1A08105"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C1843DE62F525E74ADE421C699F5CFF5"
+        "OwnerKey" = "8:_F96CF8210B8A48278E48335827107C1A"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -226,11 +232,11 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_043C6FE652AFCA69D2DF4CDAC1A08105"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_12AD9A3AF6E60287C440D569B9965A6D"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:EvernoteOAuthNet, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:EvernoteOAuthNet, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                 }
@@ -252,59 +258,7 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2E991D8DBB6B22EDF9E456F7DE3EFD4E"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SgmlReaderDll, Version=1.8.11.0, Culture=neutral, PublicKeyToken=46b2db9ca481831b, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:SgmlReaderDll.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_2BC7ECAD966E4E11BA5018CC8DE2AA1C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_31E0039E5CE3ADA799E0DFFA96E13D85"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:en-html2enml, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:en-html2enml.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_2BC7ECAD966E4E11BA5018CC8DE2AA1C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3C519F04AEC41186FEF47D7986923BD6"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1F8E3AA9A8D3EA6D1C2AEE2C1C06979E"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
@@ -330,7 +284,7 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6FCAE2BC304EED257ADE5A532B21702F"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5F8C4B9624BA59FCE1A7546BED3C4178"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
@@ -356,7 +310,79 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A9CFE70A3E82E64F79041CE31E88DC51"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_785D19194EA50DC0ABBE7568642C5DD3"
+            {
+            "SourcePath" = "8:EvernoteSDK.tlb"
+            "TargetName" = "8:EvernoteSDK.tlb"
+            "Tag" = "8:"
+            "Folder" = "8:_2BC7ECAD966E4E11BA5018CC8DE2AA1C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:2"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8CB9589B5134CA7B68C8A3FC2AC67113"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:CsQuery, Version=1.3.3.249, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                }
+            "SourcePath" = "8:CsQuery.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_2BC7ECAD966E4E11BA5018CC8DE2AA1C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9DEF72AAB525AE67F91E64AB504E25C8"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:en-html2enml, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                }
+            "SourcePath" = "8:en-html2enml.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_2BC7ECAD966E4E11BA5018CC8DE2AA1C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A9BA4D4A1AE8FEFF72FA17016AFFEA6F"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
@@ -382,15 +408,15 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C1843DE62F525E74ADE421C699F5CFF5"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E03C302115B092E539F97C3A3CDD7BFB"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:CsQuery, Version=1.3.3.249, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:SgmlReaderDll, Version=1.8.11.0, Culture=neutral, PublicKeyToken=46b2db9ca481831b, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                 }
-            "SourcePath" = "8:CsQuery.dll"
+            "SourcePath" = "8:SgmlReaderDll.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2BC7ECAD966E4E11BA5018CC8DE2AA1C"
@@ -464,15 +490,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:EvernoteSDK COM Setup"
-        "ProductCode" = "8:{7522233F-68E3-48EE-876E-ECF542BBF104}"
-        "PackageCode" = "8:{4D75A127-4ACF-414A-8044-39EA43A1876A}"
-        "UpgradeCode" = "8:{51A555BB-0DB6-49EF-A255-CF67AAA048D0}"
+        "ProductCode" = "8:{91C687C6-DFFC-45D4-AB3F-B30429294822}"
+        "PackageCode" = "8:{1A6721D2-F062-46D8-B153-DA581E44FBE3}"
+        "UpgradeCode" = "8:{CD7E5409-FDD1-4076-BEC5-6B9A9D8BAF4E}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.7"
+        "ProductVersion" = "8:1.0.12"
         "Manufacturer" = "8:Evernote"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -984,7 +1010,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_5FB63DAE7F9A4C94A05C640417644DA1"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_F96CF8210B8A48278E48335827107C1A"
             {
             "SourcePath" = "8:..\\EvernoteSDK\\obj\\Release\\EvernoteSDK.dll"
             "TargetName" = "8:"

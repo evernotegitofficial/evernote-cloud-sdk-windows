@@ -29,7 +29,7 @@ You can also just test-drive the SDK against your personal production Evernote a
 
 You have a few options:
 
-- (Recommended) *Use Nuget.* From within Visual Studio, using the Nuget Package Manager, find and install "Evernote Cloud SDK for Windows" -- this will install the Evernote SDK and its required dependent assemblies into your C# or VB.NET project.
+- (Recommended) *Use Nuget.* From within Visual Studio, using the Nuget Package Manager, find and install "Evernote SDK for Windows" -- this will install the Evernote SDK and its required dependent assemblies into your C# or VB.NET project.
 
 - (Alternative 1) From within Visual Studio, you can use the Add References option to add the DLL files contained in the "assemblies" folder of this repository into your C# or VB.NET project.
 
@@ -52,10 +52,6 @@ Do something like this in your application's startup code area. First you set up
     {
         ENSession.SharedSession.AuthenticateToEvernote();
     }
-
-Initally, API keys are only active on https://sandbox.evernote.com.  To authenticate to the add the optional thrid parameter "sandbox.evernote.com" to the SetSharedSEssionConsumerKey method as follows:
-
-ENSession.SetSharedSessionConsumerKey("your key", "your secret", "sandbox.evernote.com") 
 
 Alternative if you're using a Developer Token (see above) to access *only* your personal, production account: *don't* set a consumer key/secret (or the sandbox environment). Instead, give the SDK your developer token and Note Store URL (both personalized and available from [this page](https://www.evernote.com/api/DeveloperToken.action)). Replace the setup call above with the following.
 
