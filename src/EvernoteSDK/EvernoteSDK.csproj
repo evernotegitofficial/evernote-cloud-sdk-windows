@@ -71,6 +71,7 @@
       <HintPath>Support Assemblies\SgmlReaderDll.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
@@ -100,6 +101,7 @@
     <Compile Include="Advanced\EdamTag.cs" />
     <Compile Include="Advanced\ENNoteStoreClient.cs" />
     <Compile Include="Advanced\ENPreferencesStore.cs" />
+    <Compile Include="Advanced\ENPreferencesStoreFactory.cs" />
     <Compile Include="Advanced\ENSDKAdvanced.cs" />
     <Compile Include="Advanced\Utilities\CipherUtility.cs" />
     <Compile Include="Advanced\Utilities\ENMLWriter\ENMLWriterCOM.cs" />
@@ -110,7 +112,9 @@
     <Compile Include="Advanced\Utilities\ENMLWriter\ENEncryptedContentInfo.cs" />
     <Compile Include="Advanced\Utilities\ENMLWriter\ENMLWriter.cs" />
     <Compile Include="Advanced\Utilities\ENMLWriter\String_EDAMNullAdditions.cs" />
+    <Compile Include="Advanced\Utilities\ObjectFactory.cs" />
     <Compile Include="Advanced\Utilities\TimeConversions_EvernoteSDK.cs" />
+    <Compile Include="Configuration\ENSDKConfiguration.cs" />
     <Compile Include="ENNoteContentForCOM.cs" />
     <Compile Include="ENNoteSearchForCOM.cs">
       <SubType>Code</SubType>
