@@ -9,9 +9,9 @@ namespace EvernoteSDK.Advanced.Utilities
     {
         public static ObjectType CreateObject<ObjectType>(string fullyQualifiedTypeName)
         {
-            ObjectType result = default(ObjectType);
+            
             Type requestedType = Type.GetType(fullyQualifiedTypeName);
-            result = Activator.CreateInstance<ObjectType>();
+            ObjectType result = (ObjectType)Activator.CreateInstance(requestedType);
             return result;
         }
     }

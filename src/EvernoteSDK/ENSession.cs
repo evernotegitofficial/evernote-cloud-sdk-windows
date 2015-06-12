@@ -354,7 +354,7 @@ namespace EvernoteSDK
 		public void Startup()
 		{
 			Logger = new ENSessionDefaultLogger();
-			_Preferences = new ENPreferencesStore(ENSessionPreferencesFilename);
+			_Preferences = ENPreferencesStoreFactory.GetENPreferencesStore();
 			AuthenticationCompleted = false;
 
 			SelectInitialSessionHost();

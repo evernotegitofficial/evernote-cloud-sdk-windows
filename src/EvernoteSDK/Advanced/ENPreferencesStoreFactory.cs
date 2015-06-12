@@ -11,7 +11,8 @@ namespace EvernoteSDK.Advanced
     {
         private static Lazy<ENPreferencesStore> _lazyInitializedPreferenceStore = new Lazy<ENPreferencesStore>(() =>
          {
-             return ObjectFactory.CreateObject<ENPreferencesStore>(ENSDKConfiguration.Singleton.PreferencesStoreType);
+             ENPreferencesStore store = ObjectFactory.CreateObject<ENPreferencesStore>(ENSDKConfiguration.Singleton.PreferencesStoreType);
+             return store;
          });
         public static ENPreferencesStore GetENPreferencesStore()
         {

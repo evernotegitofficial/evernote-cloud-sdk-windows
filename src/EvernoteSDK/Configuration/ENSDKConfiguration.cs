@@ -6,12 +6,40 @@ using System.Text;
 
 namespace EvernoteSDK.Configuration
 {
-    public class ENSDKConfiguration:ConfigurationSection
+    public class ENSDKConfiguration : ConfigurationSection
     {
-        private static Lazy<ENSDKConfiguration> _lazyInitializedConfig = new Lazy<ENSDKConfiguration>(() => ConfigurationManager.GetSection("EvernoteSDK") as ENSDKConfiguration);
+        #region Constants
+        const string PreferencesStoreTypeDefault = "EvernoteSDK.Advanced.ENPreferencesStore,EvernoteSDK";
+        #endregion
 
+        private static Lazy<ENSDKConfiguration> _lazyInitializedConfig = new Lazy<ENSDKConfiguration>(() => GetFromConfigOrDefault());
+        private static ENSDKConfiguration GetFromConfigOrDefault()
+        {
+            ENSDKConfiguration currentConfiguration = ConfigurationManager.GetSection("EvernoteSDK") as ENSDKConfiguration;
+            if (currentConfiguration == null)
+            {
+                currentConfiguration = new ENSDKConfiguration();
+                currentConfiguration.InitializeDefault();
+            }
+            return currentConfiguration;
+        }
         public static ENSDKConfiguration Singleton { get { return _lazyInitializedConfig.Value; } }
-        [ConfigurationProperty(name:"PreferencesStoreType",DefaultValue= "EvernoteSDK.Advanced.ENPreferencesStore,EvernoteSDK")]
-        public string PreferencesStoreType { get; set; }
+        [ConfigurationProperty(name: "preferencesStoreType", DefaultValue = PreferencesStoreTypeDefault)]
+        public string PreferencesStoreType
+        {
+            get
+            {
+                return (string)this["preferencesStoreType"];
+            }
+            set
+            {
+                this["preferencesStoreType"] = value;
+            }
+        }
+        protected override void InitializeDefault()
+        {
+            base.InitializeDefault();
+            PreferencesStoreType = PreferencesStoreTypeDefault;
+        }
     }
 }
