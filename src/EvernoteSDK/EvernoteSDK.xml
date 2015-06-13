@@ -228,7 +228,7 @@
         </member>
         <member name="T:EvernoteSDK.Advanced.ENPreferencesStore">
             <summary>
-            Preference store for Evernote 
+            Preference store for Evernote SDK. 
             </summary>
         </member>
         <member name="P:EvernoteSDK.Advanced.ENSessionAdvanced.SharedSession">

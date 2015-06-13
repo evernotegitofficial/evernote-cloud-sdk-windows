@@ -19,7 +19,6 @@ namespace EvernoteSDK.Configuration
             if (currentConfiguration == null)
             {
                 currentConfiguration = new ENSDKConfiguration();
-                currentConfiguration.InitializeDefault();
             }
             return currentConfiguration;
         }
@@ -35,11 +34,6 @@ namespace EvernoteSDK.Configuration
             {
                 this["preferencesStoreType"] = value;
             }
-        }
-        protected override void InitializeDefault()
-        {
-            base.InitializeDefault();
-            PreferencesStoreType = PreferencesStoreTypeDefault;
         }
     }
 }
