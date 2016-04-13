@@ -15,7 +15,7 @@ When using the EDAM objects, if you want to create or read note content, be awar
 
 ### Accessing the EDAM API in the SDK
 
-By default, the Using directive you include for the SDK is intentionally compact and doesn't include the EDAM objects. To use them in your app, in addition to specifying `EvernoteSDK`, also add `EvernoteSDK.Advanced`.
+By default, the `using` directive you include for the SDK is intentionally compact and doesn't include the EDAM objects. To use them in your app, in addition to specifying `EvernoteSDK`, also add `EvernoteSDK.Advanced`.
 
     using EvernoteSDK;
     using EvernoteSDK.Advanced;
