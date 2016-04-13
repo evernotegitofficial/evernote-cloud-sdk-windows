@@ -53,7 +53,7 @@ Do something like this in your application's startup code area. First you set up
         ENSession.SharedSession.AuthenticateToEvernote();
     }
 
-Alternative if you're using a Developer Token (see above) to access *only* your personal, production account: *don't* set a consumer key/secret (or the sandbox environment). Instead, give the SDK your developer token and Note Store URL (both personalized and available from [this page](https://www.evernote.com/api/DeveloperToken.action)). Replace the setup call above with the following.
+Alternatively, if you're using a Developer Token (see above) to access *only* your personal, production account: *don't* set a consumer key/secret (or the sandbox environment). Instead, give the SDK your developer token and Note Store URL (both personalized and available from [this page](https://www.evernote.com/api/DeveloperToken.action)). Replace the setup call above with the following.
 
     ENSession.SetSharedSessionDeveloperToken("the token string that you got from us");
 
