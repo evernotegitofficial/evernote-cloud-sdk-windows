@@ -82,15 +82,31 @@ namespace EvernoteSDK
 				}
 			}
 
-			// The following accessors all allow retrieval of an appropriate note store client to perform API operations with.
 
-			///**
-			// *  The primary note store client is valid for all personal notebooks, and can also be used to authenticate with
-			// *  shared notebooks.
-			// *
-			// *  @return A client for the user's primary note store.
-			// */
-			new public ENNoteStoreClient PrimaryNoteStore
+            ///**
+            // *  The user store client that manages the Evernote user account.
+            // */
+            new public ENUserStoreClient UserStore
+            {
+                get
+                {
+                    return base.UserStore;
+                }
+                set
+                {
+                    base.UserStore = value;
+                }
+            }
+
+            // The following accessors all allow retrieval of an appropriate note store client to perform API operations with.
+
+            ///**
+            // *  The primary note store client is valid for all personal notebooks, and can also be used to authenticate with
+            // *  shared notebooks.
+            // *
+            // *  @return A client for the user's primary note store.
+            // */
+            new public ENNoteStoreClient PrimaryNoteStore
 			{
 				get
 				{

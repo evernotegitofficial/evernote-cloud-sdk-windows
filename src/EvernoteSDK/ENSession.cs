@@ -1854,7 +1854,7 @@ namespace EvernoteSDK
 
 #region Store clients
 		private ENUserStoreClient _UserStore;
-		private ENUserStoreClient UserStore
+		internal ENUserStoreClient UserStore
 		{
 			get
 			{
