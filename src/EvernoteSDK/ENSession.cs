@@ -1495,7 +1495,7 @@ namespace EvernoteSDK
 			// linked scope is not included.
 			if (context.scopeNotebook != null)
 			{
-				if (!context.scopeNotebook.IsLinked || !context.scopeNotebook.IsBusinessNotebook)
+				if (!context.scopeNotebook.IsLinked || context.scopeNotebook.IsBusinessNotebook)
 				{
 					context = FindNotes_ProcessResults(context);
 					return context;
