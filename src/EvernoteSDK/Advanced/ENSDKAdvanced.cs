@@ -21,7 +21,7 @@ namespace EvernoteSDK
 				{
 					if (ENSessionInterfaceType == InterfaceType.Basic)
 					{
-						var err = "Attempting to use the Advanced interface without first having called ENSessionAdvanced.SetSharedSessionConsumerKey";
+						var err = "Attempting to use the Advanced interface without first having called ENSessionAdvanced.SetSharedSessionConsumerKey or ENSessionAdvanced.SetSharedSessionDeveloperToken";
 						ENSDKLogger.ENSDKLogError(err);
 						throw new Exception(err);
 					}
@@ -273,7 +273,7 @@ namespace EvernoteSDK
             }
 
 			///**
-			//*  A property indicating the "source" URL for this note. Optional, and useful mainly in contexts where the 
+			//*  A property indicating the "source" URL for this note. Optional, and useful mainly in contexts where the
 			//*  note is captured from web content.
 			//*/
 			new public string SourceUrl
@@ -291,7 +291,7 @@ namespace EvernoteSDK
 			///**
 			//*  An optional dictionary of attributes which are used at upload time only to apply to an EDAMNote's attributes during
 			//*  its creation. The keys in the dictionary should be valid keys in an EDAMNoteAttributes, e.g. "author", or "sourceApplication";
-			//*  the values are the objects to apply. 
+			//*  the values are the objects to apply.
 			//*
 			//*  Note that downloaded notes do not populate this dictionary; if you need to inspect properties of an EDAMNote that aren't
 			//*  represented by ENNote, you should use ENNoteStoreClient's -getNoteWithGuid... method to download the EDAMNote directly.
