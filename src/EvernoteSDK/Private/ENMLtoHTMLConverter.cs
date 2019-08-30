@@ -15,6 +15,8 @@ internal class ENMLtoHTMLConverter
         {
             const string tagEnd = "/>";
             int tagEndLength = tagEnd.Length;
+            const string tagEndMediaAlternative = "/en-media>";            
+            int tagEndAlternativeLength = tagEndMediaAlternative.Length;
             contentResult = content.Replace("\"", "'");
             contentResult = contentResult.Replace(Microsoft.VisualBasic.Strings.Chr(13).ToString(), " ");
             contentResult = contentResult.Replace(Microsoft.VisualBasic.Strings.Chr(10).ToString(), " ");
@@ -26,11 +28,12 @@ internal class ENMLtoHTMLConverter
             while (mediaTagStart > 0)
             {
                 int mediaTagEnd = contentResult.IndexOf(tagEnd, mediaTagStart);
-                int mediaEndLength = 2;
-                if (!(mediaTagEnd > 0))
+                int mediaTagEndAlternative = contentResult.IndexOf(tagEndMediaAlternative, mediaTagStart);
+                int mediaEndLength = tagEndLength;
+                if (mediaTagEnd == -1 || (mediaTagEndAlternative != -1 && mediaTagEndAlternative < mediaTagEnd))
                 {
-                    mediaTagEnd = contentResult.IndexOf("/en-media>", mediaTagStart);
-                    mediaEndLength = 10;
+                    mediaTagEnd = mediaTagEndAlternative;
+                    mediaEndLength = tagEndAlternativeLength;
                 }
                 string mediaString = contentResult.Substring(mediaTagStart, (mediaTagEnd - mediaTagStart) + mediaEndLength);
                 if (mediaString.IndexOf("type='image/") > 0)
