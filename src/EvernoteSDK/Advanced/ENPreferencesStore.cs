@@ -8,9 +8,13 @@ namespace EvernoteSDK
 {
 	namespace Advanced
 	{
+        /// <summary>
+        /// Preference store for Evernote SDK. 
+        /// </summary>
 		public class ENPreferencesStore
 		{
-			private string Pathname {get; set;}
+            private const string ENSessionPreferencesFilename = "EvernoteSDKPrefs.bin";
+            private string Pathname {get; set;}
 			private Dictionary<string, object> Store {get; set;}
 
 			private static object PathnameForStoreFilename(string filename)
@@ -24,7 +28,9 @@ namespace EvernoteSDK
 				}
 				return string.Format("{0}\\{1}\\{2}\\{3}", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), companyKey, productKey, filename);
 			}
-
+            public ENPreferencesStore() : this(ENSessionPreferencesFilename)
+            {
+            }
 			public ENPreferencesStore(string filename)
 			{
 				Pathname = PathnameForStoreFilename(filename).ToString();
@@ -32,14 +38,14 @@ namespace EvernoteSDK
 				Load();
 			}
 
-			public object ObjectForKey(string key)
+			public virtual object ObjectForKey(string key)
 			{
 				object value = null;
 				Store.TryGetValue(key, out value);
 				return value;
 			}
 
-			public void SetObject(object objectToStore, string key)
+			public virtual void SetObject(object objectToStore, string key)
 			{
 				if (objectToStore != null)
 				{
@@ -66,7 +72,7 @@ namespace EvernoteSDK
                 stream.Close();
             }
 
-			public void RemoveAllObjects()
+			public virtual void RemoveAllObjects()
 			{
 				Store.Clear();
 				Save();

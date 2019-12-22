@@ -20,7 +20,7 @@ namespace EvernoteSDK
 		private const string ENSessionBootstrapServerBaseURLStringCN = "app.yinxiang.com";
 		private const string ENSessionBootstrapServerBaseURLStringUS = "www.evernote.com";
 
-		private const string ENSessionPreferencesFilename = "EvernoteSDKPrefs.bin";
+		
 		private const string ENSessionPreferencesCredentialStore = "CredentialStore";
 		private const string ENSessionPreferencesCurrentProfileName = "CurrentProfileName";
 		private const string ENSessionPreferencesUser = "User";
@@ -354,7 +354,7 @@ namespace EvernoteSDK
 		public void Startup()
 		{
 			Logger = new ENSessionDefaultLogger();
-			_Preferences = new ENPreferencesStore(ENSessionPreferencesFilename);
+			_Preferences = ENPreferencesStoreFactory.GetENPreferencesStore();
 			AuthenticationCompleted = false;
 
 			SelectInitialSessionHost();
